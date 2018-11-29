@@ -1,0 +1,14 @@
+
+reset;
+
+model AllDF1117.mod;
+data AllDF1117.dat;
+
+option solver cplex;
+solve;
+
+display Total_Cost;
+option omit_zero_rows 1;
+option display_1col 5000;
+display Assign;
+display Assign >AssignHateCrimes20112017.txt;
